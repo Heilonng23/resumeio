@@ -77,8 +77,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Contact
 
-For any inquiries, please contact [Ibragim Ibragimov](mailto:ibragim@example.com).
+
 
 ---
 
-**Developed by Ibragim Ibragimov**
