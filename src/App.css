@@ -46,7 +46,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  background-color: #b3b3b3;
+  background-color: #fff;
   color: #212121;
   height: 50px;
   padding: 8px 20px;
@@ -180,4 +180,12 @@ footer {
 footer img {
   height: 20px;
   margin-top: 7px;
+}
+footer button {
+  background-color: var(--white);
+  border: #212121;
+  border-radius: 30px;
+  padding: 4px 10px;
+  font-family: var(--karla);
+  font-weight: 700;
 }

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useReactToPrint } from "react-to-print";
 import "./App.css";
 import logo from "./img/logo.png";
 import icon from "./img/icon.png";
@@ -23,6 +24,11 @@ function App() {
   const [projectLink, setProjectLink] = useState("");
   const [certifications, setCertifications] = useState("Oracle Java");
   const [certificationsLink, setCertificationsLink] = useState("");
+
+  const componentRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
 
   return (
     <div className="container">
@@ -161,7 +167,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="resume">
+      <div className="resume" ref={componentRef}>
         <div className="inside">
           <div className="header2">
             <div className="names2">
@@ -253,6 +259,8 @@ function App() {
                 Source Code
               </a>
             </p>
+            <br />
+            <button onClick={handlePrint}>Download as PDF</button>
           </footer>
         </div>
       </div>
