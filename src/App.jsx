@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import logo from "./img/logo.png";
+import icon from "./img/icon.png";
 
 function App() {
   const [name, setName] = useState("Ibragim");
@@ -9,7 +10,9 @@ function App() {
   const [experienceTitle, setExperienceTitle] = useState("Software Developer");
   const [companyName, setCompanyName] = useState("Xyz");
   const [yearsWorked, setYearsWorked] = useState("2022-2024");
-  const [responsibility, setResponsibility] = useState("done nothing mate");
+  const [responsibility, setResponsibility] = useState(
+    "Developed UI of website"
+  );
   const [universityName, setUniversityName] = useState("PJATK");
   const [major, setMajor] = useState("Computer Science");
   const [universityYears, setUniversityYears] = useState("2021-2024");
@@ -241,6 +244,16 @@ function App() {
               </p>
             </div>
           </div>
+          <footer>
+            <span>
+              <img src={icon} alt="" />
+            </span>
+            <p>
+              <a href="https://github.com/Heilonng23/resumeio" target="_blank">
+                Source Code
+              </a>
+            </p>
+          </footer>
         </div>
       </div>
     </div>

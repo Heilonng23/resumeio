@@ -171,3 +171,13 @@ ul {
 a {
   color: inherit;
 }
+footer {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  height: 20px;
+  margin-top: 7px;
+}
